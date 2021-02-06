@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../images/bg-pattern.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: hsl(230, 100%, 99%);
+  height: 50vh;
+  z-index: -5;
+  font-family: "https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap",
+    sans-serif;
+}
+
+/* Heading */
+
+.head {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+}
+
+.head-bg {
+  width: 200px;
+  z-index: -2;
+}
+
+.head-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 2.5rem;
+  text-align: center;
+}
+
+.title {
+  font-weight: 800;
+}
+
+.subtitle {
+  font-weight: 600;
+}
+
+/* Main Project */
+
+.container {
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 300px;
+  padding: 45px;
+  background-color: #ffffff;
+  /* margin-bottom: 50px; */
+}
+
+.pricing-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pricing-container > h4 {
+  font-size: 20px;
+}
+
+.total-price {
+  font-size: 45px;
+}
+
+/* Slider */
+
+.slider-container {
+  width: 100%;
+  margin-top: 25px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 25px;
+  background: hsl(224, 65%, 95%);
+  outline: none;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  overflow: hidden;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 0;
+  background: url(../images/icon-slider.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: hsl(224, 65%, 95%);
+  box-shadow: -407px 0 0 400px hsl(174, 86%, 45%);
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 0;
+  background: url(../images/icon-slider.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: hsl(174, 86%, 45%);
+  box-shadow: hsl(174, 86%, 45%);
+  cursor: pointer;
+}
+
+/* Plan */
+
+.pricing-plan {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin-top: 25px;
+  background-color: hsl (0, 0%, 100%);
+}
+
+/* Switch */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 29px;
+}
+
+/* Hide html checkbox */
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* slider */
+
+.switch-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.switch-slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.checked {
+  background-color: #2196f3;
+}
+
+input:focus + .switch-slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+.checked:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.switch-slider.round {
+  border-radius: 40px;
+}
+
+.switch-slider.round:before {
+  border-radius: 50%;
+}
+
+/* Switch End */
+
+.discount {
+  color: hsl(15, 100%, 70%);
+  background-color: hsl(14, 92%, 95%);
+  padding: 8px;
+  border-radius: 30px;
+}
+
+.mobile {
+  display: none;
+}
+
+hr {
+  width: 100%;
+  margin: 30px auto;
+}
+
+/* Features */
+
+.bottom-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.features {
+  list-style: url(../images/icon-check.svg);
+}
+
+.features > li {
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+.list-item {
+  padding-left: 10px;
+}
+
+.submit-btn {
+  font-size: 20px;
+  padding: 15px;
+  border: none;
+  outline: none;
+  background-color: hsl(227, 35%, 25%);
+  color: hsl(225, 20%, 60%);
+  border-radius: 35px;
+  width: 200px;
+  cursor: pointer;
+}
+
+.attribution {
+  text-align: center;
+  padding: 25px;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: red;
+}

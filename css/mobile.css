@@ -1,0 +1,46 @@
+@media screen and (min-width: 500px) {
+  .subtitle > br {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .subtitle > br {
+    display: block;
+  }
+
+  .head-content {
+    width: 100%;
+  }
+
+  .project-container {
+    width: 320px;
+    height: 500px;
+    margin-bottom: 100px;
+    margin-top: 0;
+  }
+
+  .pricing-container {
+    flex-direction: column;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .switch {
+    margin: 0 5px;
+  }
+
+  .bottom-container {
+    flex-direction: column;
+  }
+
+  .features {
+    margin-bottom: 30px;
+  }
+}
